@@ -87,6 +87,7 @@ nav.transparent-hero{background:transparent;box-shadow:none}nav.transparent-hero
 .quote-attr{font-family:'Bebas Neue',sans-serif;font-size:.82rem;letter-spacing:3px;color:rgba(255,255,255,.55);margin-top:20px}
 .edu-grid{display:flex;gap:30px;margin-top:40px;flex-wrap:wrap}.edu-card{flex:1;min-width:240px;background:var(--warm-white);border-left:3px solid var(--gold);padding:24px;border-radius:0 4px 4px 0}
 .edu-card h4{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:1px;color:var(--navy);margin-bottom:5px}.edu-card p{font-size:.83rem;color:var(--text-muted);line-height:1.6}.edu-honors{margin-top:8px;font-size:.76rem;color:var(--gold);font-weight:500}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px;margin-top:30px}.cert-card{background:var(--warm-white);border:1px solid rgba(0,0,0,.05);padding:20px;border-radius:4px;transition:all .3s}.cert-card:hover{border-color:var(--gold);box-shadow:0 8px 30px rgba(27,42,74,.06)}.cert-card h4{font-family:'Bebas Neue',sans-serif;font-size:.9rem;letter-spacing:1px;color:var(--navy);margin-bottom:4px}.cert-card p{font-size:.78rem;color:var(--text-muted);line-height:1.5}.cert-category{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:2px;color:var(--navy);margin-top:40px;padding-bottom:8px;border-bottom:2px solid var(--gold-pale);display:inline-block}
 .contact-section{background:var(--navy-deep);color:#fff;padding:70px 0;text-align:center}
 .contact-section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);letter-spacing:2px;margin-bottom:14px}
 .contact-section p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:rgba(255,255,255,.55);font-style:italic;max-width:480px;margin:0 auto 30px}
@@ -99,9 +100,8 @@ nav.transparent-hero{background:transparent;box-shadow:none}nav.transparent-hero
 <body>
 <nav id="mainNav"><span class="nav-logo" onclick="go('home')">NADIA DAVIS</span><ul class="nav-links" id="navLinks"><li><a onclick="go('home')" data-page="home">Home</a></li><li><a onclick="go('portfolio')" data-page="portfolio">Portfolio</a></li><li><a onclick="go('speaking')" data-page="speaking">Speaking</a></li><li><a onclick="go('about')" data-page="about">About</a></li><li><a onclick="go('contact')" data-page="contact">Connect</a></li></ul><button class="nav-mobile-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button></nav>
 
-<!-- HOME -->
 <div class="page active" id="page-home">
-<section class="hero"><div class="container"><div class="hero-grid"><div class="hero-content"><div class="hero-label">TECH MARKETING LEADER</div><h1>NADIA <span>DAVIS</span></h1><p class="hero-subtitle">Full-funnel, 360&deg; marketer who turns fragmented data into revenue stories that move boardrooms and build markets.</p><div class="hero-stats"><div><div class="hero-stat-num">18+</div><div class="hero-stat-label">Years in B2B</div></div><div><div class="hero-stat-num">6</div><div class="hero-stat-label">Industries</div></div><div><div class="hero-stat-num">3</div><div class="hero-stat-label">Seasons HGMA</div></div></div><div class="hero-cta"><a class="cta-primary" onclick="go('portfolio')">VIEW PORTFOLIO</a><a class="cta-secondary" onclick="go('speaking')">SPEAKING</a></div></div><div class="hero-photo"><div class="hero-photo-frame"><img src="/mnt/user-data/uploads/Nadia_Davis_Profile_2026.png" alt="Nadia Davis"></div><div class="hero-photo-accent"></div></div></div></div></section>
+<section class="hero"><div class="container"><div class="hero-grid"><div class="hero-content"><div class="hero-label">TECH MARKETING LEADER</div><h1>NADIA <span>DAVIS</span></h1><p class="hero-subtitle">Full-funnel, 360&deg; marketer who turns fragmented data into revenue stories that move boardrooms and build markets.</p><div class="hero-stats"><div><div class="hero-stat-num">18+</div><div class="hero-stat-label">Years in B2B</div></div><div><div class="hero-stat-num">6</div><div class="hero-stat-label">Industries</div></div><div><div class="hero-stat-num">3</div><div class="hero-stat-label">Seasons HGMA</div></div></div><div class="hero-cta"><a class="cta-primary" onclick="go('portfolio')">VIEW PORTFOLIO</a><a class="cta-secondary" onclick="go('speaking')">SPEAKING</a></div></div><div class="hero-photo"><div class="hero-photo-frame"><img src="Nadia_Davis_Profile_2026.png" alt="Nadia Davis"></div><div class="hero-photo-accent"></div></div></div></div></section>
 
 <section class="comp-section"><div class="container"><div class="section-label">CORE COMPETENCIES</div><h2 class="section-title">The Full-Funnel Trifecta</h2><p class="section-intro">Three interconnected disciplines that create a compounding marketing advantage&mdash;each one amplifying the others.</p><div class="comp-tabs"><button class="comp-tab active" data-tab="storytelling">Storytelling &amp; Brand</button><button class="comp-tab" data-tab="community">Community Creation</button><button class="comp-tab" data-tab="revenue">Revenue Marketing &amp; Analytics</button></div><div class="comp-panels">
 <div class="comp-panel active" id="panel-storytelling"><div class="comp-panel-grid"><div class="comp-panel-text"><h3>DATA-DRIVEN STORYTELLING &amp; BRAND BUILDING</h3><p>Nadia builds brands not as fuzzy concepts but as long-term investments that create a competitive moat. At CaliberMind, she architected a brand strategy anchored in original research that positioned the company as the definitive voice in marketing attribution and GTM intelligence.</p></div><div class="comp-case-cards"><div class="cc"><div class="cc-tag">CALIBERMIND</div><h4>STATE OF MARKETING ATTRIBUTION REPORT</h4><p>Annual research with Scott Brinker &amp; Frans Riemersma benchmarking what separates mature attribution practices from stuck ones. Now in its 2nd edition.</p></div><div class="cc"><div class="cc-tag">CALIBERMIND</div><h4>PERIODIC TABLE OF ATTRIBUTION ELEMENTS</h4><p>Proprietary framework mapping data modeling, measurement rules, and cross-team alignment as one connected system.</p></div><div class="cc"><div class="cc-tag">STONEBRANCH</div><h4>GLOBAL STATE OF IT AUTOMATION REPORT</h4><p>Annual benchmark surveying 400+ IT professionals worldwide on enterprise IT automation trends.</p></div><div class="cc"><div class="cc-tag">PAYIT</div><h4>DIGITAL GOVERNMENT ADOPTION INDEX</h4><p>Research with The Harris Poll surveying 2,000+ consumers and 600 government leaders.</p></div></div></div></div>
@@ -120,10 +120,33 @@ nav.transparent-hero{background:transparent;box-shadow:none}nav.transparent-hero
 <div class="tl-item reveal"><div class="tl-date"><span>2007 &mdash; 2018</span></div><div class="tl-content"><h3>DIRECTOR, PERFORMANCE MARKETING &amp; CONSULTING</h3><h4>ND Medica &amp; Digital Strategy Consulting</h4><p>A decade leading performance marketing for medical devices alongside ABM and digital strategy consulting.</p></div></div>
 </div></div></section>
 
-<section class="section"><div class="container"><div class="section-label reveal">EDUCATION</div><h2 class="section-title reveal">Academic Foundation</h2><div class="edu-grid"><div class="edu-card reveal"><h4>MBA</h4><p>West Texas A&amp;M University</p><div class="edu-honors">Alpha Mu Alpha &mdash; National Marketing Honorary</div></div><div class="edu-card reveal rd1"><h4>OMSA &mdash; ANALYTICS</h4><p>Georgia Institute of Technology</p><div class="edu-honors">Online Master of Science in Analytics</div></div><div class="edu-card reveal rd2"><h4>BACHELOR OF ARTS</h4><p>Yaroslavl State Pedagogical University</p><div class="edu-honors">K. D. Ushinsky</div></div></div></div></section>
+<section class="section"><div class="container"><div class="section-label reveal">EDUCATION</div><h2 class="section-title reveal">Academic Foundation</h2><div class="edu-grid"><div class="edu-card reveal"><h4>MBA</h4><p>West Texas A&amp;M University</p><div class="edu-honors">Alpha Mu Alpha &mdash; National Marketing Honorary</div></div><div class="edu-card reveal rd1"><h4>OMSA &mdash; ANALYTICS</h4><p>Georgia Institute of Technology</p><div class="edu-honors">Online Master of Science in Analytics</div></div><div class="edu-card reveal rd2"><h4>BACHELOR OF BUSINESS ADMINISTRATION</h4><p>University of North Georgia</p><div class="edu-honors">Cottrell College of Business</div></div></div>
+
+<div class="section-label reveal rd3" style="margin-top:60px">CONTINUED EDUCATION</div><h2 class="section-title reveal rd3">Licenses &amp; Certifications</h2>
+
+<div class="cert-category reveal rd4">Python Programming &amp; Data Analytics</div><div class="cert-grid">
+<div class="cert-card reveal"><h4>edX Verified Certificate for Computing in Python IV: Objects &amp; Algorithms</h4><p>edX | Issued Apr 2026</p></div>
+<div class="cert-card reveal"><h4>edX Verified Certificate for Computing in Python III: Data Structures</h4><p>edX | Issued Mar 2026</p></div>
+<div class="cert-card reveal"><h4>edX Verified Certificate for Computing in Python II: Control Structures</h4><p>edX | Issued Feb 2026</p></div>
+<div class="cert-card reveal"><h4>edX Verified Certificate for Computing in Python I: Fundamentals and Procedural Programming</h4><p>edX | Issued Jan 2026</p></div>
+<div class="cert-card reveal"><h4>Tableau Level II</h4><p>Tableau</p></div>
+<div class="cert-card reveal"><h4>The Salesforce Administrator Career Certificate</h4><p>Harvard Division of Continuing Education | Issued Jun 2023</p></div>
+<div class="cert-card reveal"><h4>HubSpot Inbound</h4><p>HubSpot | Issued Oct 2019 (Expired Oct 2021)</p></div>
+<div class="cert-card reveal"><h4>Buyer Persona Institute Subject Matter Expert Certification</h4><p>Buyer Persona Institute | Issued Apr 2020</p></div>
+<div class="cert-card reveal"><h4>Market Research Certification</h4><p>American Marketing Association | Issued Feb 2018</p></div>
 </div>
 
-<!-- PORTFOLIO -->
+<div class="cert-category reveal rd4" style="margin-top:40px">Creative &amp; Design Leadership</div><div class="cert-grid">
+<div class="cert-card reveal"><h4>Art Director, Graphic Designer</h4><p>Upskillist</p></div>
+<div class="cert-card reveal"><h4>Adobe Illustrator CS</h4><p>Auburn University Office of Professional and Continuing Education | Issued Jun 2020</p></div>
+<div class="cert-card reveal"><h4>Adobe Photoshop CS</h4><p>Auburn University Office of Professional and Continuing Education | Issued Apr 2020</p></div>
+<div class="cert-card reveal"><h4>Adobe Photoshop CC 2015</h4><p>University of North Georgia | Issued Apr 2019</p></div>
+<div class="cert-card reveal"><h4>Adobe InDesign CC</h4><p>University of North Georgia | Issued May 2019</p></div>
+</div>
+
+</div></section>
+</div>
+
 <div class="page" id="page-portfolio">
 <div class="page-header"><div class="container"><div class="section-label">SIGNATURE WORK</div><h1>PORTFOLIO</h1><p>Every initiative creates compounding value&mdash;brand equity that lowers CAC, communities that generate pipeline, and measurement systems that prove it all.</p></div></div>
 <section class="section"><div class="container">
@@ -146,7 +169,6 @@ nav.transparent-hero{background:transparent;box-shadow:none}nav.transparent-hero
 </div></div></section>
 </div>
 
-<!-- SPEAKING -->
 <div class="page" id="page-speaking">
 <div class="page-header"><div class="container"><div class="section-label">THOUGHT LEADERSHIP</div><h1>SPEAKING &amp; PODCASTS</h1><p>Translating complex data into actionable insights on stages from Scottsdale to Alpharetta&mdash;and in earbuds everywhere between.</p></div></div>
 <section class="section"><div class="container"><div class="section-label">CONFERENCES &amp; KEYNOTES</div><h2 class="section-title" style="margin-bottom:40px">Stage Appearances</h2>
@@ -193,32 +215,8 @@ nav.transparent-hero{background:transparent;box-shadow:none}nav.transparent-hero
 </div></div></section>
 </div>
 
-<!-- ABOUT -->
 <div class="page" id="page-about">
 <div class="page-header"><div class="container"><div class="section-label">THE STRATEGIST</div><h1>ABOUT NADIA</h1><p>A performance marketer who refuses to choose between storytelling and spreadsheets&mdash;because the most powerful growth comes from mastering both.</p></div></div>
 <section class="section"><div class="container"><div class="about-grid">
 <div class="about-text reveal"><p>Nadia Davis is a VP-level marketing executive with 18+ years building revenue-generating marketing engines across SaaS, DaaS, IaaS, GovTech, IT automation, healthcare technology, and data platforms. She is known for building teams from scratch, overhauling martech stacks, and creating data-driven programs that sales teams can act on immediately.</p><p>Currently VP of Marketing at CaliberMind, she leads demand generation, ABM, and marketing operations for the GTM intelligence and multi-touch attribution platform. A former CaliberMind customer herself, Nadia empowers revenue teams to harness their data for better insights, attribution, and growth.</p><p>Her career spans senior roles at PayIt, Stonebranch, LexisNexis Risk Solutions, Informa, and ND Medica, complemented by nearly a decade as an ABM and digital strategy consultant. At each stop, she designed persona-driven targeting, ran high-profile industry events, and built marketing programs that continued to deliver pipeline well beyond launch.</p><p>A former Girls in Tech board member, Nadia combines hands-on technical expertise with leadership skills to grow both teams and results.</p></div>
-<div class="about-highlights reveal rd1"><div class="h-card"><h4>BRAND BUILDER</h4><p>Market-defining authority that forces competitors to react and lowers marginal CAC.</p></div><div class="h-card"><h4>STORYTELLER</h4><p>Complex data into compelling narratives through research reports and frameworks.</p></div><div class="h-card"><h4>COMMUNITY CREATOR</h4><p>Self-sustaining engines of thought leadership and pipeline.</p></div><div class="h-card"><h4>REVENUE OPERATOR</h4><p>Full-funnel measurement connecting every touch to closed revenue.</p></div><div class="h-card"><h4>ABM STRATEGIST</h4><p>Holistic, non-conventional omni-channel ABM with measurable results.</p></div><div class="h-card"><h4>MARTECH ARCHITECT</h4><p>Overhauls and optimizes marketing technology stacks teams trust.</p></div></div>
-</div></div></section>
-<section class="section" style="background:var(--warm-white)"><div class="container"><div class="section-label reveal">EDUCATION</div><h2 class="section-title reveal">Academic Foundation</h2><div class="edu-grid"><div class="edu-card reveal"><h4>MBA</h4><p>West Texas A&amp;M University</p><div class="edu-honors">Alpha Mu Alpha &mdash; National Marketing Honorary</div></div><div class="edu-card reveal rd1"><h4>OMSA &mdash; ANALYTICS</h4><p>Georgia Institute of Technology</p><div class="edu-honors">Online Master of Science in Analytics</div></div><div class="edu-card reveal rd2"><h4>BACHELOR OF ARTS</h4><p>Yaroslavl State Pedagogical University</p><div class="edu-honors">K. D. Ushinsky</div></div></div></div></section>
-<section class="quote-section"><div class="container"><p class="quote-text">"Marketing is often named the most dynamic function within the C-suite as it unites so many distinctly different disciplines. No other function has that much role diversity&mdash;with all roles needing to come together in a holistic and measurable way."</p><p class="quote-attr">&mdash; NADIA DAVIS</p></div></section>
-</div>
-
-<!-- CONTACT -->
-<div class="page" id="page-contact">
-<div class="page-header" style="padding-bottom:0"><div class="container" style="padding-bottom:80px"><div class="section-label">GET IN TOUCH</div><h1>LET'S CONNECT</h1><p>Whether you need a marketing leader who turns data into revenue or a speaker who makes analytics human.</p><div class="contact-links" style="margin-top:40px"><a href="https://linkedin.com/in/nadia-davis-mba" class="c-link" target="_blank">LINKEDIN</a><a href="https://calibermind.com" class="c-link" target="_blank">Email</a><a href="ndavis30041@gmail.com" class="c-link" target="_blank">
-</div>
-
-<footer class="footer"><p>&copy; 2026 NADIA DAVIS. ALL RIGHTS RESERVED.</p></footer>
-<script>
-function go(page){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+page).classList.add('active');document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.toggle('active',a.dataset.page===page)});document.getElementById('navLinks').classList.remove('open');window.scrollTo({top:0,behavior:'instant'});setTimeout(()=>{document.querySelectorAll('.reveal:not(.visible)').forEach(el=>observer.observe(el))},50);const isHome=page==='home';document.getElementById('mainNav').classList.toggle('transparent-hero',isHome);history.pushState(null,null,'#'+page)}
-const nav=document.getElementById('mainNav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>50));
-document.getElementById('navToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
-document.querySelectorAll('.comp-tab').forEach(tab=>{tab.addEventListener('click',()=>{document.querySelectorAll('.comp-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.comp-panel').forEach(p=>p.classList.remove('active'));tab.classList.add('active');document.getElementById('panel-'+tab.dataset.tab).classList.add('active')})});
-document.querySelectorAll('.port-filter button').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.port-filter button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('#portGrid .p-card').forEach(card=>{card.style.display=(f==='all'||card.dataset.cat.includes(f))?'':'none'})})});
-const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-go(location.hash.replace('#','')||'home');
-window.addEventListener('popstate',()=>{go(location.hash.replace('#','')||'home')});
-</script>
-</body>
-</html>
+<div class="about-highlights reveal rd1"><div class="h-card"><h4>BRAND BUILDER</h4><p>Market-defining authority that forces competitors to react and lowers marginal CAC.</p></div><div class="h-card"><h4>STORYTELLER</h4><p>Complex data into compelling narratives through research reports and frameworks.</p></div>
